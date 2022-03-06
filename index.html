@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>payment</title>
+  <link rel="stylesheet" href="./css/bootstrap.min.css">
+</head>
+<body>
+
+  <div class="container">
+    <h1 class="h1 visually-hidden">Payment Method</h1>
+
+      <form action="https://echo.htmlacademy.ru/courses" class="form">
+
+        <div class="row">
+
+        <div class="col-8">
+          <div class="mt-5 shadow p-4 ">
+            <h2 class="h2 mb-5">Payment information</h2>
+            <div class="row">
+
+              <div class="col-12">
+                <div class="mb-3">
+                <label for="card-number" class="form-label text-secondary text-uppercase fw-bold">Card Number</label>
+                <input type="password" min="16" class="form-control" id="card-number" name="card number" placeholder="enter your card number" required>
+              </div>
+              </div>
+
+              <div class="col-8">
+                <label for="holder" class="form-label text-secondary text-uppercase fw-bold">Card Holder</label>
+                <input type="text" class="form-control" id="holder" name="card holder name" placeholder="enter your name">
+              </div>
+
+
+              <div class="col-2">
+                <label for="data" class="form-label text-secondary text-uppercase fw-bold">Exp. Data</label>
+                <input type="datetime" class="form-control" id="data" name="card validation date" placeholder="date">
+              </div>
+
+              <div class="col-2">
+                <label for="password" class="form-label text-secondary text-uppercase fw-bold">Cvc</label>
+                <input type="password" class="form-control" id="password" name="card password" placeholder="password">
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-4">
+          <div class="mt-5 shadow">
+            <div class="p-4">
+              <div class=" d-flex align-items-center border-bottom  pb-4">
+                <button type="button" class="btn position-relative me-4 border border-1 p-2">
+                  <img class="" src="./images/chocolate.png" alt="chocolate icon">
+                  <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+                    2
+                    <span class="visually-hidden">unread messages</span>
+                  </span>
+                </button>
+                <h3 class="h3 me-auto fs-4">Chocolate bar</h3>
+                <span class="fw-bold">$2.49</span>
+              </div>
+
+              <div class="border-bottom py-3">
+                <div class="d-flex">
+                  <h4 class="h4 fs-6 me-auto">Subtotal</h4>
+                  <span class="fw-bold ">$4.98</span>
+                </div>
+
+                <div class="d-flex">
+                  <h4 class="h4 fs-6 me-auto">Shipping</h4>
+                  <span class="fw-bold ">$3.00</span>
+                </div>
+              </div>
+
+              <div class="d-flex pt-3">
+                <h4 class="h4 fs-6 me-auto">Total</h4>
+                <span class="fw-bold ">$7.98</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-8">
+          <div class="mt-4 shadow py-4">
+            <h2 class="h2 mb-4 ps-4">Billing address</h2>
+
+            <div class="form-check border-bottom py-3">
+              <div class="ps-4">
+                <input class="form-check-input" type="radio" name="address type" id="shipping" placeholder=" Same as the shipping address">
+                <label class="form-check-label fw-bold" for="shipping">
+                  Same as the shipping address
+                </label>
+              </div>
+            </div>
+
+            <div class="form-check pt-3">
+              <div class="ps-4">
+                <input class="form-check-input" type="radio" name="address type" id="billing-address" placeholder=" Use a different billing address">
+                <label class="form-check-label fw-bold" for="billing-address">
+                  Use a different billing address
+                </label>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-8">
+          <div class="d-flex align-items-center mt-5 mb-3 justify-content-between">
+            <a href="#" class="text-primary text-decoration-none">Return to shipping method</a>
+            <button type="submit" class="btn btn-primary">Complete order</button>
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+
+</body>
+</html>
